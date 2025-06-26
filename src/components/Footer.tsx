@@ -1,5 +1,5 @@
 import React from 'react';
-import { Github, Linkedin, Mail, Twitter, Heart, ArrowUp } from 'lucide-react';
+import { Github, Linkedin, Mail, Twitter, Heart, ArrowUp, MessageCircleMore } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -7,8 +7,9 @@ const Footer = () => {
   const socialLinks = [
     { icon: <Github />, href: 'https://github.com', label: 'GitHub' },
     { icon: <Linkedin />, href: 'https://linkedin.com', label: 'LinkedIn' },
-    { icon: <Twitter />, href: 'https://twitter.com', label: 'Twitter' },
+    // { icon: <Twitter />, href: 'https://twitter.com', label: 'Twitter' },
     { icon: <Mail />, href: 'mailto:hello@drischdaan.dev', label: 'Email' },
+    { icon: <MessageCircleMore />, href: 'https://wa.me/+525519061300', label: 'Phone' },
   ];
 
   const quickLinks = [
@@ -71,7 +72,7 @@ const Footer = () => {
             <h3 className="text-lg font-semibold text-white mb-4">Contáctame</h3>
             <div className="space-y-3 text-gray-400">
               <p>danien888@hotmail.com</p>
-              <p>(+52) 5519061300</p>
+              <p>+52 (55) 1906-1300</p>
               <p>CDMX, Miguel Hidalgo - México</p>
             </div>
           </div>

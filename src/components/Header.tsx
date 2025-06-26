@@ -24,7 +24,7 @@ const Header = () => {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
+        isScrolled || isMenuOpen
           ? 'bg-slate-900/95 backdrop-blur-sm border-b border-purple-500/20'
           : 'bg-transparent border-b-0 backdrop-blur-none'
       }`}
@@ -43,7 +43,7 @@ const Header = () => {
               <a
                 key={item.href}
                 href={item.href}
-                className="text-slate-50 hover:text-purple-400 transition-colors duration-200 text-xl lg:text-2xl font-medium"
+                className="text-purple-400 hover:text-slate-50 transition-colors duration-200 text-xl lg:text-2xl font-medium"
               >
                 {item.label}
               </a>

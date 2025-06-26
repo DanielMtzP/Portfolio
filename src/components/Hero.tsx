@@ -1,4 +1,4 @@
-import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react';
+import { ArrowDown, Github, Linkedin, Mail, MessageCircleMore } from 'lucide-react';
 import Lottie from 'lottie-react';
 import animationPc from '../lotties/animationPc.json'
 
@@ -46,6 +46,9 @@ const Hero = () => {
             </a>
             <a href="mailto:danien888@hotmail.com" target="_blank" className="text-gray-400 hover:text-purple-400 transition-colors duration-200">
               <Mail size={48} />
+            </a>
+            <a href="https://wa.me/+525519061300" target="_blank" className="text-gray-400 hover:text-purple-400 transition-colors duration-200">
+              <MessageCircleMore size={48} />
             </a>
           </div>
         </div>
