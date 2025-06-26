@@ -10,6 +10,8 @@
 
 html {
   scroll-behavior: smooth;
+  background-color: black;
+  overflow-x: hidden;
 }
 
 body {
@@ -18,4 +20,5 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }

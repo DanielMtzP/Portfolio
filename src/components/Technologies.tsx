@@ -82,34 +82,34 @@ const Technologies = () => {
         </div>
 
         {/* Main Technologies Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 mb-16">
+        <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 sm:gap-6 mb-16">
           {mainTechnologies.map((tech, index) => (
             <div
               key={index}
-              className="bg-slate-800/50 backdrop-blur-sm border border-purple-500/20 rounded-2xl p-6 text-center hover:border-purple-500/40 transition-all duration-300 hover:transform hover:scale-105 group"
+              className="bg-slate-800/50 backdrop-blur-sm border border-purple-500/20 rounded-xl sm:rounded-2xl p-4 sm:p-6 text-center hover:border-purple-500/40 transition-all duration-300 hover:transform hover:scale-105 group"
             >
-              <div className="text-4xl mb-3 group-hover:scale-110 transition-transform duration-300">
+              <div className="text-3xl sm:text-4xl mb-2 sm:mb-3 group-hover:scale-110 transition-transform duration-300">
                 {tech.icon}
               </div>
-              <div className="text-white font-medium text-sm">{tech.name}</div>
+              <div className="text-white font-medium text-xs sm:text-sm">{tech.name}</div>
               <div className={`mt-2 h-1 bg-gradient-to-r ${tech.color} rounded-full opacity-60 group-hover:opacity-100 transition-opacity duration-300`}></div>
             </div>
           ))}
         </div>
 
         {/* Detailed Tech Categories */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
           {techCategories.map((category, categoryIndex) => (
             <div
               key={categoryIndex}
-              className="bg-slate-800/50 backdrop-blur-sm border border-purple-500/20 rounded-2xl p-8 hover:border-purple-500/40 transition-all duration-300"
+              className="bg-slate-800/50 backdrop-blur-sm border border-purple-500/20 rounded-xl sm:rounded-2xl p-6 sm:p-8 hover:border-purple-500/40 transition-all duration-300"
             >
-              <h3 className="text-2xl font-bold text-white mb-6 flex items-center">
+              <h3 className="text-xl sm:text-2xl font-bold text-white mb-4 sm:mb-6 flex items-center">
                 <div className="w-2 h-2 bg-purple-400 rounded-full mr-3"></div>
                 {category.title}
               </h3>
               
-              <div className="space-y-6">
+              <div className="space-y-4 sm:space-y-6">
                 {category.techs.map((tech, techIndex) => (
                   <div key={techIndex} className="group">
                     <div className="flex items-center justify-between mb-2">
@@ -137,7 +137,7 @@ const Technologies = () => {
         {/* Additional Skills */}
         <div className="mt-16 text-center">
           <h3 className="text-2xl font-bold text-white mb-8">And Many More...</h3>
-          <div className="flex flex-wrap justify-center gap-3">
+          <div className="flex flex-wrap justify-center gap-2 sm:gap-3 px-4">
             {[
               'GraphQL', 'Redux', 'Webpack', 'Sass', 'Tailwind CSS', 'Jest', 
               'Cypress', 'Firebase', 'Supabase', 'Vercel', 'Netlify', 'Linux'

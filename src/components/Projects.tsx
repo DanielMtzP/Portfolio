@@ -1,4 +1,3 @@
-import React from 'react';
 import { ExternalLink, Github, Eye } from 'lucide-react';
 
 const Projects = () => {
@@ -46,7 +45,7 @@ const Projects = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            My Recent <span className="text-purple-400">Projects</span>
+            My Recent <span className="text-cyan-400">Projects</span>
           </h2>
           <p className="text-gray-300 text-lg max-w-2xl mx-auto">
             Here are some of my recent projects that showcase my skills and creativity

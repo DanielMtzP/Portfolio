@@ -1,86 +1,73 @@
-import React, { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   const navItems = [
-    { href: '#home', label: 'Home' },
-    { href: '#about', label: 'About' },
-    { href: '#services', label: 'Services' },
-    { href: '#projects', label: 'Projects' },
-    { href: '#contact', label: 'Contact' },
+    { href: '#home', label: 'Inicio' },
+    { href: '#about', label: 'Sobre mi' },
+    { href: '#services', label: 'Servicios' },
+    { href: '#projects', label: 'Proyectos' },
+    { href: '#contact', label: 'Contacto' },
   ];
 
   return (
     <header
-      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        isScrolled
-          ? 'bg-slate-900/95 backdrop-blur-sm border-b border-purple-500/20'
-          : 'bg-transparent'
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        'bg-slate-900/95 backdrop-blur-sm border-b border-purple-500/20'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between py-4">
-          <div className="text-2xl font-bold text-white">
-            <span className="text-purple-400">D</span>RISCHDAAN
+        <div className="flex items-center justify-between pt-6 pb-2 min-w-0">
+          <div className="text-xl sm:text-2xl font-bold text-white flex-shrink-0">
+            <a  href='#home'>
+              <span className="text-cyan-500">DN</span>Mtz
+            </a>
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-8">
+          <nav className="hidden lg:flex space-x-8">
             {navItems.map((item) => (
               <a
                 key={item.href}
                 href={item.href}
-                className="text-gray-300 hover:text-purple-400 transition-colors duration-200"
+                className="text-slate-50 hover:text-purple-400 transition-colors duration-200 text-xl lg:text-2xl font-medium"
               >
                 {item.label}
               </a>
             ))}
           </nav>
-
-          <button className="hidden md:block bg-purple-600 hover:bg-purple-700 text-white px-6 py-2 rounded-full transition-colors duration-200">
-            Get Started
-          </button>
-
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden text-white"
+            className="lg:hidden text-white p-2 flex-shrink-0 -mr-2"
           >
-            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            {isMenuOpen ? <X size={20} /> : <Menu size={20} />}
           </button>
         </div>
 
         {/* Mobile Menu */}
-        {isMenuOpen && (
-          <div className="md:hidden py-4 border-t border-purple-500/20">
-            <nav className="flex flex-col space-y-4">
-              {navItems.map((item) => (
+        <div className={`lg:hidden overflow-hidden transition-all duration-300 ease-in-out border-t border-purple-500/20 ${
+          isMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+        }`}>
+          <nav className="flex flex-col text-center py-4">
+            {navItems.map((item, index) => (
+              <div key={item.href}>
                 <a
-                  key={item.href}
                   href={item.href}
-                  className="text-gray-300 hover:text-purple-400 transition-colors duration-200"
+                  className="text-gray-300 hover:text-purple-400 transition-colors duration-200 text-lg font-medium py-3 block"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.label}
                 </a>
-              ))}
-              <button className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-2 rounded-full transition-colors duration-200 w-fit">
-                Get Started
-              </button>
-            </nav>
-          </div>
-        )}
+                {index < navItems.length - 1 && (
+                  <div className="h-px bg-gradient-to-r from-transparent via-purple-500/20 to-transparent mx-8"></div>
+                )}
+              </div>
+            ))}
+          </nav>
+        </div>
       </div>
     </header>
   );

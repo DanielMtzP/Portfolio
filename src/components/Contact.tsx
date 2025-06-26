@@ -50,33 +50,33 @@ const Contact = () => {
     <section id="contact" className="py-20 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
             Let's Work <span className="text-purple-400">Together</span>
           </h2>
-          <p className="text-gray-300 text-lg max-w-2xl mx-auto">
+          <p className="text-gray-300 text-base sm:text-lg max-w-2xl mx-auto px-4">
             Ready to start your next project? Let's discuss how I can help bring your ideas to life.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
           {/* Contact Information */}
-          <div className="space-y-8">
+          <div className="space-y-6 sm:space-y-8">
             <div>
-              <h3 className="text-2xl font-bold text-white mb-6">Get In Touch</h3>
-              <p className="text-gray-300 leading-relaxed mb-8">
+              <h3 className="text-xl sm:text-2xl font-bold text-white mb-4 sm:mb-6">Get In Touch</h3>
+              <p className="text-gray-300 leading-relaxed mb-6 sm:mb-8">
                 I'm always interested in new opportunities and exciting projects. 
                 Whether you have a question or just want to say hi, I'll try my best to get back to you!
               </p>
             </div>
 
-            <div className="space-y-6">
+            <div className="space-y-4 sm:space-y-6">
               {contactInfo.map((info, index) => (
                 <a
                   key={index}
                   href={info.link}
-                  className="flex items-center p-6 bg-slate-800/50 backdrop-blur-sm border border-purple-500/20 rounded-2xl hover:border-purple-500/40 transition-all duration-300 hover:transform hover:scale-105 group"
+                  className="flex items-center p-4 sm:p-6 bg-slate-800/50 backdrop-blur-sm border border-purple-500/20 rounded-xl sm:rounded-2xl hover:border-purple-500/40 transition-all duration-300 hover:transform hover:scale-105 group"
                 >
-                  <div className="text-purple-400 mr-6 group-hover:text-pink-400 transition-colors duration-300">
+                  <div className="text-purple-400 mr-4 sm:mr-6 group-hover:text-pink-400 transition-colors duration-300">
                     {React.cloneElement(info.icon, { size: 24 })}
                   </div>
                   <div>
@@ -88,20 +88,20 @@ const Contact = () => {
             </div>
 
             {/* CTA Section */}
-            <div className="bg-gradient-to-r from-purple-600/20 to-pink-600/20 border border-purple-500/30 rounded-2xl p-8 mt-8">
-              <h4 className="text-xl font-bold text-white mb-4">Ready to Start Your Project?</h4>
-              <p className="text-gray-300 mb-6">
+            <div className="bg-gradient-to-r from-purple-600/20 to-pink-600/20 border border-purple-500/30 rounded-xl sm:rounded-2xl p-6 sm:p-8 mt-6 sm:mt-8">
+              <h4 className="text-lg sm:text-xl font-bold text-white mb-3 sm:mb-4">Ready to Start Your Project?</h4>
+              <p className="text-gray-300 mb-4 sm:mb-6 text-sm sm:text-base">
                 Let's discuss your project requirements and how I can help you achieve your goals.
               </p>
-              <button className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-8 py-3 rounded-full font-semibold transition-all duration-300 transform hover:scale-105">
+              <button className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-6 sm:px-8 py-2 sm:py-3 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 text-sm sm:text-base w-full sm:w-auto">
                 Schedule a Call
               </button>
             </div>
           </div>
 
           {/* Contact Form */}
-          <div className="bg-slate-800/50 backdrop-blur-sm border border-purple-500/20 rounded-2xl p-8">
-            <h3 className="text-2xl font-bold text-white mb-6">Send Message</h3>
+          <div className="bg-slate-800/50 backdrop-blur-sm border border-purple-500/20 rounded-xl sm:rounded-2xl p-6 sm:p-8">
+            <h3 className="text-xl sm:text-2xl font-bold text-white mb-4 sm:mb-6">Send Message</h3>
             
             {isSubmitted ? (
               <div className="text-center py-12">
@@ -111,7 +111,7 @@ const Contact = () => {
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
                       Name

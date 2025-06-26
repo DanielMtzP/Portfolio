@@ -12,11 +12,11 @@ const Footer = () => {
   ];
 
   const quickLinks = [
-    { name: 'Home', href: '#home' },
-    { name: 'About', href: '#about' },
-    { name: 'Services', href: '#services' },
-    { name: 'Projects', href: '#projects' },
-    { name: 'Contact', href: '#contact' },
+    { name: 'Inicio', href: '#home' },
+    { name: 'Sobre Mi', href: '#about' },
+    { name: 'Servicios', href: '#services' },
+    { name: 'Proyectos', href: '#projects' },
+    { name: 'Contacto', href: '#contact' },
   ];
 
   const scrollToTop = () => {
@@ -30,11 +30,10 @@ const Footer = () => {
           {/* Brand & Description */}
           <div className="md:col-span-2">
             <div className="text-3xl font-bold text-white mb-4">
-              <span className="text-purple-400">D</span>RISCHDAAN
+              <span className="text-purple-400">D</span>ANIEL MARTÍNEZ
             </div>
             <p className="text-gray-300 leading-relaxed mb-6 max-w-md">
-              Full Stack Developer & UI/UX Designer passionate about creating 
-              exceptional digital experiences that make a difference in people's lives.
+              Apasionado desarrollador front-end con experiencia en la creación de interfaces de usuario inutitivas así como aplicaciones modernas, funcionales y fáciles de usar.
             </p>
             <div className="flex space-x-4">
               {socialLinks.map((link, index) => (
@@ -52,7 +51,7 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-lg font-semibold text-white mb-4">Quick Links</h3>
+            <h3 className="text-lg font-semibold text-white mb-4">Enlaces Rápidos</h3>
             <ul className="space-y-3">
               {quickLinks.map((link, index) => (
                 <li key={index}>
@@ -69,11 +68,11 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div>
-            <h3 className="text-lg font-semibold text-white mb-4">Get In Touch</h3>
+            <h3 className="text-lg font-semibold text-white mb-4">Contáctame</h3>
             <div className="space-y-3 text-gray-400">
-              <p>hello@drischdaan.dev</p>
-              <p>+1 (555) 123-4567</p>
-              <p>San Francisco, CA</p>
+              <p>danien888@hotmail.com</p>
+              <p>(+52) 5519061300</p>
+              <p>CDMX, Miguel Hidalgo - México</p>
             </div>
           </div>
         </div>
@@ -83,14 +82,14 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-gray-400 text-sm mb-4 md:mb-0">
               <p className="flex items-center">
-                © {currentYear} Drischdaan. Made with 
+                © {currentYear} Daniel. Made with 
                 <Heart className="text-red-500 mx-1" size={16} />
                 and lots of coffee.
               </p>
             </div>
             
             <div className="flex items-center space-x-6">
-              <div className="text-gray-400 text-sm">
+              <div className="hidden text-gray-400 text-sm">
                 <a href="#" className="hover:text-purple-400 transition-colors duration-200">
                   Privacy Policy
                 </a>
