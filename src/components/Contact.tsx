@@ -51,7 +51,7 @@ const Contact = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
-            Let's Work <span className="text-purple-400">Together</span>
+            Let's Work <span className="text-cyan-400">Together</span>
           </h2>
           <p className="text-gray-300 text-base sm:text-lg max-w-2xl mx-auto px-4">
             Ready to start your next project? Let's discuss how I can help bring your ideas to life.

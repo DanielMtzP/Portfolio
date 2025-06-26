@@ -86,7 +86,7 @@ const Technologies = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Tecnologías <span className="text-purple-400">que uso</span>
+            Tecnologías <span className="text-purple-400">Que uso</span>
           </h2>
           <p className="text-gray-300 text-lg max-w-2xl mx-auto">
             Herramientas que utilizo para desarrollar interfaces modernas y de alto rendimiento.

@@ -51,7 +51,7 @@ const Services = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Mis <span className="text-purple-400">Servicios</span>
+            Mis <span className="text-cyan-400">Servicios</span>
           </h2>
           <p className="text-gray-300 text-lg max-w-2xl mx-auto">
             Ofrezco soluciones digitales enfocadas al desarrollo frontend para dar vida a tus ideas con interfaces modernas, funcionales y atractivas.
