@@ -14,10 +14,10 @@ function App() {
       <Header />
       <Hero />
       <About />
+      <Technologies />
       <Services />
       <Projects />
-      <Technologies />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <Contact />
       <Footer />
     </div>
