@@ -114,13 +114,15 @@ const Contact = () => {
 
             {/* CTA Section */}
             <div className="bg-gradient-to-r from-cyan-600/20 to-blue-600/20 border border-cyan-500/30 rounded-xl sm:rounded-2xl p-6 sm:p-8 mt-6 sm:mt-8">
-              <h4 className="text-lg sm:text-xl font-bold text-white mb-3 sm:mb-4">¿Listo para Comenzar tu Proyecto?</h4>
+              <h4 className="text-lg sm:text-xl font-bold text-white mb-3 sm:mb-4">¿Quieres Conocer Más Sobre Mi?</h4>
               <p className="text-gray-300 mb-4 sm:mb-6 text-sm sm:text-base">
-                Hablemos sobre los requisitos de tu proyecto y cómo puedo ayudarte a lograr tus objetivos.
+                Descarga mi CV para conocer más detalles sobre mi experiencia, habilidades y proyectos.
               </p>
-              <button className="bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-700 hover:to-blue-700 text-white px-6 sm:px-8 py-2 sm:py-3 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 text-sm sm:text-base w-full sm:w-auto">
-                Agendar una Llamada
-              </button>
+              <a href='https://1drv.ms/b/c/d59d555204934f1c/EeGwyeBo2KpOqssiwhpkFq4BV-Ujx-eRMqAnfqS2hgzGOQ?e=1zSEBm' target="_blank">
+                <button className="bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-700 hover:to-blue-700 text-white px-6 sm:px-8 py-2 sm:py-3 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 text-sm sm:text-base w-full sm:w-auto">
+                  Descargar CV
+                </button>
+              </a>
             </div>
           </div>
 

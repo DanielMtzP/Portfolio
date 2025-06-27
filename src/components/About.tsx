@@ -22,13 +22,13 @@ const About = () => {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
-          <div className="space-y-6 h-full">
+          <div className="space-y-6 h-full flex flex-col justify-center">
             <p className="text-gray-300 text-lg leading-relaxed">
               Con más de 2 años de experiencia creando aplicaciones modernas, funcionales y fáciles de usar. Me especializo en tecnologías web modernas y me encanta convertir ideas en diseños simples y atractivos.
             </p>
             
             <p className="text-gray-300 leading-relaxed">
-              En mi tiempo libre me gusta explorar nuevas tecnologías, ver noticias para actualizarme con con las novedades del desarrollo y disfrutando de un buen café.
+              En mi tiempo libre me gusta explorar nuevas tecnologías, ver noticias para actualizarme con con las novedades del desarrollo.
             </p>
 
             <div className="space-y-4">
