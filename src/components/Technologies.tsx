@@ -98,7 +98,7 @@ const Technologies = () => {
           {mainTechnologies.map((tech, index) => (
             <div
               key={index}
-              className="bg-slate-800/30 backdrop-blur-sm border border-slate-700/50 rounded-2xl p-6 text-center hover:border-purple-500/50 hover:bg-slate-800/50 transition-all duration-300 hover:transform hover:scale-105 group"
+              className="bg-slate-800/50 backdrop-blur-sm border border-purple-500/20 rounded-2xl p-6 text-center hover:border-purple-500/40 transition-all duration-300 hover:transform hover:scale-105 group"
             >
               <div className="text-4xl mb-4 flex justify-center group-hover:scale-110 transition-transform duration-300">
                 <div className={`p-3 rounded-xl bg-gradient-to-r ${tech.color} text-white shadow-lg`}>

@@ -99,9 +99,9 @@ const Contact = () => {
                 <a
                   key={index}
                   href={info.link} target='_blank'
-                  className="flex items-center p-4 sm:p-6 bg-slate-800/50 backdrop-blur-sm border border-purple-500/20 rounded-xl sm:rounded-2xl hover:border-purple-500/40 transition-all duration-300 hover:transform hover:scale-105 group"
+                  className="flex items-center p-4 sm:p-6 bg-slate-800/50 backdrop-blur-sm border border-cyan-500/20 rounded-xl sm:rounded-2xl hover:border-cyan-500/40 transition-all duration-300 hover:transform hover:scale-105 group"
                 >
-                  <div className="text-purple-400 mr-4 sm:mr-6 group-hover:text-pink-400 transition-colors duration-300">
+                  <div className="text-cyan-400 mr-4 sm:mr-6 group-hover:text-cyan-300 transition-colors duration-300">
                     {React.cloneElement(info.icon, { size: 24 })}
                   </div>
                   <div>
@@ -113,19 +113,19 @@ const Contact = () => {
             </div>
 
             {/* CTA Section */}
-            <div className="bg-gradient-to-r from-purple-600/20 to-pink-600/20 border border-purple-500/30 rounded-xl sm:rounded-2xl p-6 sm:p-8 mt-6 sm:mt-8">
+            <div className="bg-gradient-to-r from-cyan-600/20 to-blue-600/20 border border-cyan-500/30 rounded-xl sm:rounded-2xl p-6 sm:p-8 mt-6 sm:mt-8">
               <h4 className="text-lg sm:text-xl font-bold text-white mb-3 sm:mb-4">¿Listo para Comenzar tu Proyecto?</h4>
               <p className="text-gray-300 mb-4 sm:mb-6 text-sm sm:text-base">
                 Hablemos sobre los requisitos de tu proyecto y cómo puedo ayudarte a lograr tus objetivos.
               </p>
-              <button className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-6 sm:px-8 py-2 sm:py-3 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 text-sm sm:text-base w-full sm:w-auto">
+              <button className="bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-700 hover:to-blue-700 text-white px-6 sm:px-8 py-2 sm:py-3 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 text-sm sm:text-base w-full sm:w-auto">
                 Agendar una Llamada
               </button>
             </div>
           </div>
 
           {/* Contact Form */}
-          <div className="bg-slate-800/50 backdrop-blur-sm border border-purple-500/20 rounded-xl sm:rounded-2xl p-6 sm:p-8">
+          <div className="bg-slate-800/50 backdrop-blur-sm border border-cyan-500/20 rounded-xl sm:rounded-2xl p-6 sm:p-8">
             <h3 className="text-xl sm:text-2xl font-bold text-white mb-4 sm:mb-6">Enviar Mensaje</h3>
             
             {isSubmitted ? (
@@ -148,7 +148,7 @@ const Contact = () => {
                       value={formData.name}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 bg-slate-700/50 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-all duration-200"
+                      className="w-full px-4 py-3 bg-slate-700/50 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 transition-all duration-200"
                       placeholder="Tu Nombre"
                     />
                   </div>
@@ -163,7 +163,7 @@ const Contact = () => {
                       value={formData.email}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 bg-slate-700/50 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-all duration-200"
+                      className="w-full px-4 py-3 bg-slate-700/50 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 transition-all duration-200"
                       placeholder="tu@email.com"
                     />
                   </div>
@@ -180,7 +180,7 @@ const Contact = () => {
                     value={formData.subject}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 bg-slate-700/50 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-all duration-200"
+                    className="w-full px-4 py-3 bg-slate-700/50 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 transition-all duration-200"
                     placeholder="Asunto del Proyecto"
                   />
                 </div>
@@ -196,7 +196,7 @@ const Contact = () => {
                     onChange={handleChange}
                     required
                     rows={6}
-                    className="w-full px-4 py-3 bg-slate-700/50 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-all duration-200 resize-none"
+                    className="w-full px-4 py-3 bg-slate-700/50 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 transition-all duration-200 resize-none"
                     placeholder="Cuéntame sobre tu proyecto..."
                   />
                 </div>
@@ -204,7 +204,7 @@ const Contact = () => {
                 <button
                   type="submit"
                   disabled={isLoading}
-                  className={`w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 flex items-center justify-center ${
+                  className={`w-full bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-700 hover:to-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 flex items-center justify-center ${
                     isLoading ? 'opacity-70 cursor-not-allowed' : ''
                   }`}
                 >

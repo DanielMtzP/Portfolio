@@ -3,8 +3,8 @@ import { ExternalLink, Github, Eye } from 'lucide-react';
 const Projects = () => {
   const projects = [
     {
-      title: 'E-Commerce Platform',
-      description: 'A modern e-commerce solution with payment integration, inventory management, and admin dashboard.',
+      title: 'Plataforma E-Commerce',
+      description: 'Solución moderna de comercio electrónico con integración de pagos, gestión de inventario y panel de administración.',
       image: 'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800',
       technologies: ['React', 'Node.js', 'MongoDB', 'Stripe'],
       githubUrl: '#',
@@ -12,8 +12,8 @@ const Projects = () => {
       featured: true,
     },
     {
-      title: 'Task Management App',
-      description: 'Collaborative task management application with real-time updates and team collaboration features.',
+      title: 'App de Gestión de Tareas',
+      description: 'Aplicación colaborativa de gestión de tareas con actualizaciones en tiempo real y funciones de colaboración en equipo.',
       image: 'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800',
       technologies: ['Vue.js', 'Firebase', 'TypeScript'],
       githubUrl: '#',
@@ -21,8 +21,8 @@ const Projects = () => {
       featured: true,
     },
     {
-      title: 'Weather Dashboard',
-      description: 'Beautiful weather application with detailed forecasts and interactive maps.',
+      title: 'Dashboard del Clima',
+      description: 'Hermosa aplicación del clima con pronósticos detallados y mapas interactivos.',
       image: 'https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=800',
       technologies: ['React', 'Weather API', 'Chart.js'],
       githubUrl: '#',
@@ -30,8 +30,8 @@ const Projects = () => {
       featured: false,
     },
     {
-      title: 'Social Media Analytics',
-      description: 'Comprehensive analytics dashboard for social media performance tracking.',
+      title: 'Analíticas de Redes Sociales',
+      description: 'Dashboard integral de analíticas para el seguimiento del rendimiento en redes sociales.',
       image: 'https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg?auto=compress&cs=tinysrgb&w=800',
       technologies: ['Next.js', 'Python', 'PostgreSQL'],
       githubUrl: '#',
@@ -45,10 +45,10 @@ const Projects = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            My Recent <span className="text-purple-400">Projects</span>
+            Proyectos <span className="text-purple-400">Recientes</span>
           </h2>
           <p className="text-gray-300 text-lg max-w-2xl mx-auto">
-            Here are some of my recent projects that showcase my skills and creativity
+            Aquí tienes algunos de mis proyectos recientes que muestran mis habilidades y creatividad
           </p>
         </div>
 
@@ -104,14 +104,14 @@ const Projects = () => {
                       className="flex items-center text-purple-400 hover:text-purple-300 transition-colors duration-200"
                     >
                       <ExternalLink size={16} className="mr-2" />
-                      Live Demo
+                      Ver Demo
                     </a>
                     <a
                       href={project.githubUrl}
                       className="flex items-center text-gray-400 hover:text-gray-300 transition-colors duration-200"
                     >
                       <Github size={16} className="mr-2" />
-                      Source Code
+                      Código Fuente
                     </a>
                   </div>
                 </div>

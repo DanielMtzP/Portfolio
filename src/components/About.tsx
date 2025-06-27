@@ -40,9 +40,9 @@ const About = () => {
             {stats.map((stat, index) => (
               <div
                 key={index}
-                className="bg-slate-800/50 backdrop-blur-sm border border-purple-500/20 rounded-2xl p-6 text-center hover:border-purple-500/40 transition-all duration-300 hover:transform hover:scale-105"
+                className="bg-slate-800/50 backdrop-blur-sm border border-cyan-500/20 rounded-2xl p-6 text-center hover:border-cyan-500/40 transition-all duration-300 hover:transform hover:scale-105"
               >
-                <div className="text-purple-400 mb-4 flex justify-center">
+                <div className="text-cyan-400 mb-4 flex justify-center">
                   {React.cloneElement(stat.icon, { size: 32 })}
                 </div>
                 <div className="text-2xl font-bold text-white mb-2">{stat.value}</div>

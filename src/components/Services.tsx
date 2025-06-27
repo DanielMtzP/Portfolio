@@ -62,9 +62,9 @@ const Services = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-slate-800/50 backdrop-blur-sm border border-purple-500/20 rounded-2xl p-8 hover:border-purple-500/40 transition-all duration-300 hover:transform hover:scale-105 group"
+              className="bg-slate-800/50 backdrop-blur-sm border border-cyan-500/20 rounded-2xl p-8 hover:border-cyan-500/40 transition-all duration-300 hover:transform hover:scale-105 group"
             >
-              <div className="text-purple-400 mb-6 group-hover:text-pink-400 transition-colors duration-300">
+              <div className="text-cyan-400 mb-6 group-hover:text-blue-400 transition-colors duration-300">
                 {React.cloneElement(service.icon, { size: 48 })}
               </div>
               
@@ -75,7 +75,7 @@ const Services = () => {
               <ul className="space-y-2">
                 {service.features.map((feature, featureIndex) => (
                   <li key={featureIndex} className="text-sm text-gray-400 flex items-center">
-                    <div className="w-1.5 h-1.5 bg-purple-400 rounded-full mr-3"></div>
+                    <div className="w-1.5 h-1.5 bg-cyan-400 rounded-full mr-3"></div>
                     {feature}
                   </li>
                 ))}
